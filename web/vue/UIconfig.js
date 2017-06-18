@@ -4,9 +4,9 @@
 // see https://github.com/askmike/gekko/blob/stable/docs/installing_gekko_on_a_server.md
 
 const CONFIG = {
-    headless: false,
+    headless: true,
     api: {
-        host: '127.0.0.1',
+        host: '0.0.0.0',
         port: 3000,
     },
     ui: {
@@ -14,8 +14,7 @@ const CONFIG = {
         host: '45.55.88.96',
         port: 3000,
         path: '/'
-    },
-    adapter: 'sqlite'
+    }
 }
 
 if(typeof window === 'undefined')
